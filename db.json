@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Yagnesh",
+      "age": 32,
+      "phone": "8690090417",
+      "gender": "Male",
+      "username": "yagnesh123"
+    },
+    {
+      "id": 2,
+      "name": "Tejaswini",
+      "age": 32,
+      "phone": "8690090417",
+      "gender": "Female",
+      "username": "Namrata123",
+      "alive": true
+    }
+  ],
+  "session": [
+    {
+      "id": 1,
+      "title": "Javascript Tutorial",
+      "description": "Javascript is scripting language",
+      "approved": true,
+      "sessionTimeDateTime": "2019-08-01T13:15:00"
+    },
+    {
+      "id": 2,
+      "title": "Ext JS",
+      "description": "Ext JS is scripting language",
+      "approved": true,
+      "sessionTimeDateTime": "2019-08-02T13:15:00"
+    },
+    {
+      "title": "C++",
+      "id": 3,
+      "description": "C++ is scripting language",
+      "approved": "on",
+      "sessionTimeDateTime": "2019-08-01T13:15:00+05:30",
+      "sessionTimePretty": "08/01/2019 1:15 pm"
+    },
+    {
+      "id": 4,
+      "title": "Node js",
+      "description": "Node js is scripting language",
+      "approved": true,
+      "sessionTimeDateTime": "2019-08-02T13:15:00"
+    },
+    {
+      "id": 5,
+      "title": "Express js",
+      "approved": true,
+      "sessionTimeDateTime": "2019-08-02T13:15:00"
+    }
+  ],
+  "presenter": [
+    {
+      "id": 1,
+      "firstName": "Yagnesh",
+      "lastName": "Modh",
+      "website": "www.iamyagnesh.com",
+      "bio": "developer",
+      "imageUrl": "",
+      "imagePicture": ""
+    },
+    {
+      "id": 2,
+      "firstName": "Namrata",
+      "lastName": "Bhoajak",
+      "website": "www.iamnamrata.com",
+      "bio": "tester",
+      "imageUrl": "",
+      "imagePicture": ""
+    }
+  ],
+  "sessionPresenter": [
+    {
+      "id": 1,
+      "sessionId": 1,
+      "presenterId": 1,
+      "sequence": "render Text",
+      "speakerName": "Yagnesh Modh"
+    },
+    {
+      "id": 2,
+      "sessionId": 1,
+      "presenterId": 2,
+      "sequence": "render Text",
+      "speakerName": "Yagnesh Modh"
+    }
+  ]
+}

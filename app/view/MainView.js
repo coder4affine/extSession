@@ -1,43 +1,43 @@
 Ext.define("SE.view.MainView", {
   extend: "Ext.container.Viewport",
-  layout: {
-    type: "border"
-  },
+  layout: "fit",
   items: [
     {
-      region: "west",
-      split: true,
-      flex: 1,
-      layout: {
-        type: "vbox",
-        align: "stretch"
-      },
+      xtype: "panel",
+      resizable: false,
+      layout: "border",
+      collapsed: false,
       items: [
         {
-          xtype: "sessionGridPanel",
-          //   html: "Session Grid Panel",
-          flex: 3
+          xtype: "container",
+          region: "center",
+          layout: {
+            type: "vbox",
+            align: "stretch"
+          },
+          items: [
+            {
+              xtype: "datepicker",
+              minDate: new Date()
+            },
+            {
+              xtype: "splitter",
+              width: 1
+            },
+            {
+              xtype: "presenters",
+              // html: "<b>Speakers panel</b>",
+              flex: 1
+            }
+          ]
         },
         {
-          xtype: "splitter",
-          width: 1
-        },
-        {
-          xtype: "panel",
-          html: "<b>Speakers panel</b>",
-          flex: 1
+          region: "east",
+          xtype: "detailspanel",
+          flex: 2,
+          split: true
         }
       ]
-    },
-    {
-      region: "center",
-      html: "<b>Details panel</b>",
-      flex: 1,
-      xtype: "panel",
-      title: "Details Panel",
-      collapsible: true,
-      collapsed: true,
-      collapseDirection: "right"
     }
   ]
 });

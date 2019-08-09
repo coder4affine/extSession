@@ -3,6 +3,7 @@ Ext.define("SE.model.Session", {
   fields: [
     { name: "title", sortType: "asUCText" },
     { name: "id", sortType: "asInt" },
+    "description",
     "approved",
     {
       name: "sessionTimeDateTime",

@@ -9,11 +9,11 @@ Ext.application({
 
   controllers: ["SE.controller.SessionController"],
 
-  stores: ["Sessions"],
+  stores: ["Sessions", "SessionPresenters", "Presenters"],
 
-  models: ["Session"],
+  models: ["Session", "Presenter", "SessionPresenter"],
 
-  views: ["Sessions", "SessionForm"],
+  views: ["Sessions", "SessionForm", "Presenters", "Details"],
 
   launch: function() {
     Ext.create("SE.view.MainView");
